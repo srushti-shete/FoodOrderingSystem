@@ -13,6 +13,8 @@
 #navbar{
     display: flex;
     align-items: center;
+    position: relative;
+    top: 0px;
 }
 #navbar::before{
     content: "";
@@ -20,8 +22,10 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 /* Navbar: Logo and Image */
@@ -37,9 +41,6 @@
 #navbar ul{
     display: flex;
     font-family: 'Cinzel', serif;
-}
-#navbar{
-    position: relative;
 }
 
 #navbar ul li{
@@ -57,6 +58,7 @@
 #navbar ul li a:hover{
     background-color: black;
     color: white;
+    opacity: 0.5;
 }
 
 /* Home Section */
@@ -64,7 +66,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 455px;
+    height: 450px;
     justify-content: center;
     align-items: center;
 }
@@ -72,10 +74,12 @@
     content: "";
     background:url('bg.jpg') no-repeat center center/cover;
     position: absolute;
-    height: 100%;
+    height: 83%;
     width: 100%;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    opacity: 0.60;
+    opacity: 0.65;
 }
 #home h1{
     color: rgb(55, 16, 2);
@@ -88,12 +92,45 @@
     font-size: 22px;
     font-family: 'Crimson Text', serif;
 }
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 0px 11px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+#services .box:hover{
+    background-color: #c6c3c3;
+}
+#services .box p{
+    font-family: 'Crimson Text', serif;
+    font-size: 17px;
+}
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    
+}
 
 /* Utility Classes */
 .h-primary{
-    font-size: 2rem;
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    padding: 3px;
+}
+.h-secondary{
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
     padding: 5px;
 }
+
 .btn{
     padding: 11px 20px;
     border: 2px solid rgb(33, 3, 3);
@@ -108,4 +145,7 @@
 .btn:hover{
     background-color: rgb(141, 127, 121);
     color: black
+}
+.center{
+    text-align: center;
 }
