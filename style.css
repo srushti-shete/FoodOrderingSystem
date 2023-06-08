@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* CSS Variables */
 :root{
@@ -15,6 +18,7 @@
     align-items: center;
     position: relative;
     top: 0px;
+    /* position: sticky; */
 }
 #navbar::before{
     content: "";
@@ -25,7 +29,7 @@
     top: 0px;
     left: 0px;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 /* Navbar: Logo and Image */
@@ -40,7 +44,9 @@
 /* Navbar: List Styling */
 #navbar ul{
     display: flex;
-    font-family: 'Cinzel', serif;
+    font-family: 'Libre Baskerville', serif
+    /* font-family: 'Cinzel', serif; */
+    /* font-family: 'Cormorant Garamond', serif; */
 }
 
 #navbar ul li{
@@ -58,21 +64,21 @@
 #navbar ul li a:hover{
     background-color: black;
     color: white;
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 /* Home Section */
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
+    padding: 3px 60px;
     height: 450px;
     justify-content: center;
     align-items: center;
 }
 #home::before{
     content: "";
-    background:url('bg.jpg') no-repeat center center/cover;
+    background:url('bg1.jpg') no-repeat center center/cover;
     position: absolute;
     height: 83%;
     width: 100%;
@@ -82,15 +88,17 @@
     opacity: 0.65;
 }
 #home h1{
-    color: rgb(55, 16, 2);
+    color: black;
     text-align: center;
-    font-family: 'Crimson Text', serif;
+    /* font-family: 'Crimson Text', serif; */
+    font-family: 'Cormorant Garamond', serif;
 }
 #home p{
-    color: rgb(55, 16, 2);
+    color: black;
     text-align: center;
     font-size: 22px;
-    font-family: 'Crimson Text', serif;
+    /* font-family: 'Crimson Text', serif; */
+    font-family: 'Cormorant Garamond', serif;
 }
 /* services section */
 #services{
@@ -100,7 +108,7 @@
 }
 #services .box{
     border: 2px solid brown;
-    margin: 0px 11px;
+    margin: 15px 11px;
     padding: 40px;
     border-radius: 20px;
     background-color: #f2f2f2;
@@ -114,6 +122,7 @@
 }
 #services .box img{
     height: 200px;
+    /* margin: 100px; */
     display: block;
     margin: auto;
     
@@ -121,12 +130,12 @@
 /* Clients Section */
 
 #client-section{
-    height: 344px;
+    /* height: 344px; */
 }
 #client-section::before{
     content: "";
     position:absolute;
-    background: url(bg1.jpg);
+    /* background: url(bg1.jpg); */
     width: 100%;
     height: 53%;
     z-index: -1;
@@ -141,7 +150,8 @@
     padding: 34px;
 }
 #clients img{
-    height: 250px;
+    height: 124px;
+    padding: 0px;
 }
 
 /* Contact Section */
